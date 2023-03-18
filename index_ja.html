@@ -9,12 +9,25 @@
     </head>
     <body>
         <header>
+            <!-- ハンバーガーメニュー -->
             <nav>
                 <ul>
-                    <li><a href="index_ja.html">日本語</a></li>
-                    <li><a href="index_zh.html">繁體中文</a></li>
-                    <li><a href="index_en.html">English</a></li>
+                    <div class="hamburger-menu">
+                        <div class="hamburger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                 </ul>
+                <!-- 言語選択プルダウン -->
+                <div class="language-switcher">
+                    <select id="language-switcher">
+                        <option value="index_ja.html">日本語</option>
+                        <option value="index_zh.html">繁體中文</option>
+                        <option value="index_en.html">English</option>
+                    </select>
+                </div>
             </nav>
         </header>
         <main>
