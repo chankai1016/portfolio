@@ -23,6 +23,19 @@ hamburgerMenu.addEventListener('click', () => {
 
 // このコードは、ハンバーガーメニューがクリックされたときに、ナビゲーションとハンバーガーアイコンにactiveクラスを追加/削除します。最後に、styles.cssファイルにactiveクラスに対応するスタイルを追加して、ナビゲーションが表示されるようにしましょう。
 
+// ハンバーガーメニューの表示・非表示
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const hamburgerMenuContent = document.querySelector(".hamburger-menu-content");
+
+hamburgerIcon.addEventListener("click", () => {
+  if (hamburgerMenuContent.style.transform === "translateY(-100%)") {
+    hamburgerMenuContent.style.transform = "translateY(0)";
+  } else {
+    hamburgerMenuContent.style.transform = "translateY(-100%)";
+  }
+});
+
+
 
 // 3. 画像ギャラリー
 // 画像ギャラリーの実装は、利用するライブラリやプラグインによって異なります。
